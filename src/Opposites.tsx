@@ -154,7 +154,7 @@ export const Opposites: React.FC = props => {
                   <div style={{ marginTop: 6 }}></div>
                   {`b   c   d   f   g   h   j   k   l   m   n   p   q   r   s   t   v   w   x   z `}
                   <div style={{ marginTop: 6 }}></div>
-                  <strong>{`        ^                                       ^`}</strong>
+                  <strong>{`                    ^                                       ^`}</strong>
                </div>
                <Brk />
                Let's try the letter <code>a</code>:
