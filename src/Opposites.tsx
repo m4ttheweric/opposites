@@ -49,6 +49,7 @@ function opposite(letter: string) {
    //get the index of the latter in our word
    const letterIndex = dict.indexOf(letter.toLowerCase());
 
+   //if character is not found, return it as is
    if (letterIndex === -1) return letter;
 
    //half the length of the dictionary
