@@ -42,13 +42,19 @@ export const Opposites: React.FC = props => {
 function opposite(letter: string) {
    if (letter === ' ') return ' ';
 
+   //is this a consonant or vowel...
    const dict =
       CONSONANTS.indexOf(letter.toLowerCase()) > -1 ? CONSONANTS : VOWELS;
 
+   //get the index of the latter in our word
    const letterIndex = dict.indexOf(letter.toLowerCase());
 
+   if (letterIndex === -1) return letter;
+
+   //half the length of the dictionary
    const a2 = dict.length / 2;
 
+   //if the latter is in the first half of the pool, then go to the letter + 1/2 the pool length, or inverse if in 2nd half
    return letterIndex < a2 ? dict[letterIndex + a2] : dict[letterIndex - a2];
 }
 
